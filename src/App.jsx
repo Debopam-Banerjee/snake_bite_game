@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom"; // Use Navigate instead of Redirect
 import { useState } from "react";
+import Rules from "./Levels/Rules";
 import Level1 from "./Levels/Level1";
 import Level2 from "./Levels/Level2"; // Assuming you have these components
 import Level3 from "./Levels/Level3";
@@ -44,7 +45,14 @@ function App() {
 
   return (
     <Router>
+        {/* Route for Level 1 */}
+       
+
       <Routes>
+      <Route
+          path="*"
+          element={<Rules />}
+        />
         {/* Route for Level 1 */}
         <Route
           path="/level1"
