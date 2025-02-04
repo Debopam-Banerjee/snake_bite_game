@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { FaClock, FaQuestionCircle } from "react-icons/fa";
 import backgroundImage from "../assets/images/snake11.png";
+import videoFile from "../assets/videos/How_to_Immobilize_like_a_fractured_limb.mp4";
+
 
 const Level1 = ({ setCompletedLevels }) => {
   const location = useLocation();
@@ -295,8 +297,8 @@ const Level1 = ({ setCompletedLevels }) => {
             {/* <FaCaretUp className="absolute top-10 right-4"/> */}
             <p className="text-black text-base font-bold">How to Immobilize like a fractured limb?</p>
             <video className="rounded-b-lg" width="320" height="240" controls>
-              <source src="src/assets/videos/How_to_Immobilize_like_a_fractured_limb.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+            <source src={videoFile} type="video/mp4" />
+            Your browser does not support the video tag.
             </video>
           </div>
         </>
