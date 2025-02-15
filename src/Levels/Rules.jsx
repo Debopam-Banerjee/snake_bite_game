@@ -50,7 +50,7 @@ function Rules() {
                         <div>There are possibilities like no envenomations, haemotoxic envenomation or neurotoxic envenomation.</div>
                         <div>In case of them, these are different clinical scenarios leading to different management paths.</div>
                         <div>By completing each path successfully, you will get a star.</div>
-                        <div>Collect all the stars to complete the game.</div>
+                        <div>Collect 8 stars to complete the game.</div>
                     </div>
                     <button
                         className="border-2 bg-green-400 border-green-700 hover:bg-green-500 hover:border-green-900 hover:scale-102 p-2 rounded w-40 cursor-pointer transition-transform duration-200 ease-in-out"
