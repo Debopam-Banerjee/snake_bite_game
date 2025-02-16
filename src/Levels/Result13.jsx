@@ -125,12 +125,12 @@ const FinalResult13 = () => {
       ) : (
         <>
           <div className="p-6 flex flex-col items-center">
-            <h2 className="text-2xl font-bold text-blue-500 mb-6">Final Results</h2>
-            <p className="text-lg text-gray-600 mb-4 font-semibold">
+            <h2 className="text-2xl font-bold text-amber-800 mb-6">Final Results</h2>
+            <p className="text-lg text-amber-600 mb-4 font-semibold">
               The options you selected since Level 1
             </p>
 
-            <div className="w-full max-w-lg bg-white p-4 rounded-lg shadow-lg">
+            <div className="w-full max-w-lg bg-amber-50/40 p-4 rounded-lg shadow-lg">
               <ul>
                 {displayPath.map((levelKey, index) => (
                   <li key={index} className="mb-4">
@@ -150,13 +150,13 @@ const FinalResult13 = () => {
             <div className="flex space-x-2">
               <button
                 onClick={handleHomeClick}
-                className="bg-blue-500 text-white px-4 py-2 mt-6 rounded-md hover:bg-blue-600 transition"
+                className="bg-amber-800 text-white px-4 py-2 mt-6 rounded-md hover:bg-amber-900 transition"
               >
                 Home
               </button>
               <button
                 onClick={handleExitClick}
-                className="bg-blue-500 text-white px-4 py-2 mt-6 rounded-md hover:bg-blue-600 transition"
+                className="bg-amber-800 text-white px-4 py-2 mt-6 rounded-md hover:bg-amber-900 transition"
               >
                 Exit
               </button>
