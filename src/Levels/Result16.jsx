@@ -5,8 +5,8 @@ const FinalResult16 = () => {
   const [allResults, setAllResults] = useState({});
   const [showStarPopup, setShowStarPopup] = useState(true);
   const [showWarningPopup, setShowWarningPopup] = useState(false);
-    const [showCompletionPopup, setShowCompletionPopup] = useState(false);
-  
+  const [showCompletionPopup, setShowCompletionPopup] = useState(false);
+
   const navigate = useNavigate(); // Initialize navigate for routing
 
   // Map of level results to their display titles
@@ -62,16 +62,16 @@ const FinalResult16 = () => {
       navigate("/level1");
     }
   };
-  
+
 
   // Function to handle Exit button click
   const handleExitClick = () => {
-  if (areAllPathsTrue()) {
-    setShowCompletionPopup(true); // Show completion popup if all are true
-  } else {
-    setShowWarningPopup(true); // Otherwise, show warning popup
-  }
-};
+    if (areAllPathsTrue()) {
+      setShowCompletionPopup(true); // Show completion popup if all are true
+    } else {
+      setShowWarningPopup(true); // Otherwise, show warning popup
+    }
+  };
 
   // Function to confirm exit even after warning
   const confirmExit = () => {
@@ -98,8 +98,8 @@ const FinalResult16 = () => {
       ) : (
         <>
           <div className="p-6 flex flex-col items-center">
-            <h2 className="text-2xl font-bold text-blue-500 mb-6">Game Results</h2>
-            <p className="text-lg text-gray-600 mb-4 font-semibold" >
+            <h2 className="text-2xl font-bold text-amber-800 mb-6">Game Results</h2>
+            <p className="text-lg text-amber-600 mb-4 font-semibold" >
               The options you selected since Level 1
             </p>
             <div className="w-full max-w-lg bg-white p-4 rounded-lg shadow-lg">
@@ -119,13 +119,13 @@ const FinalResult16 = () => {
             <div className="flex space-x-2">
               <button
                 onClick={handleHomeClick}
-                className="bg-blue-500 text-white px-4 py-2 mt-6 rounded-md hover:bg-blue-600 transition"
+                className="bg-amber-800 text-white px-4 py-2 mt-6 rounded-md hover:bg-amber-900 transition"
               >
                 Home
               </button>
               <button
                 onClick={handleExitClick}
-                className="bg-blue-500 text-white px-4 py-2 mt-6 rounded-md hover:bg-blue-600 transition"
+                className="bg-amber-800 text-white px-4 py-2 mt-6 rounded-md hover:bg-amber-900 transition"
               >
                 Exit
               </button>
