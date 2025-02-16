@@ -239,8 +239,8 @@ function App() {
           path="/level13"
           element={
             <ProtectedRoute
-              completed={completedLevels.level9}
-              redirectTo="/level9"
+              completed={completedLevels.level9 || completedLevels.level10}
+              redirectTo={completedLevels.level9 ? "/level9" : "/level10"}
             >
               <Level13 setCompletedLevels={setCompletedLevels} />
             </ProtectedRoute>
