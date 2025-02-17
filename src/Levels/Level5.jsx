@@ -295,13 +295,13 @@ const Level5 = ({ setCompletedLevels }) => {
       </div>
       {/* Icons on the top-right corner */}
       <div className="absolute top-4 right-4 flex items-center gap-4">
-        <div className="flex items-center gap-2 cursor-pointer">
+{/*         <div className="flex items-center gap-2 cursor-pointer">
           <FaClock className="text-slate-50 text-xl sm:text-2xl" />
 
-          {/*<h2 className="text-xl text-blue-600 font-bold">
+          <h2 className="text-xl text-blue-600 font-bold">
             {countdown}
-          </h2>*/}
-        </div>
+          </h2>
+        </div> */}
         <div className="flex items-center gap-2 cursor-pointer">
           <FaQuestionCircle className="text-slate-50 text-xl sm:text-2xl" />
           <span className="text-slate-50 text-sm sm:text-base">Help</span>
