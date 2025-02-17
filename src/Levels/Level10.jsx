@@ -333,7 +333,7 @@ const Level10 = ({ setCompletedLevels }) => {
           <span className="text-slate-50 text-sm sm:text-base">Help</span>
         </div>
       </div>
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full my-6">
         {/* <h2 className="text-xl font-bold mx-auto mr-54">Choose card from deck</h2> */}
         <h2 className="text-2xl font-bold text-slate-50 mx-auto mr-50 mb-6">
           Not improving after 30 min:
