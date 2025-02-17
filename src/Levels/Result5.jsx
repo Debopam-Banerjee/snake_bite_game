@@ -40,7 +40,8 @@ const FinalResult5 = () => {
   // Function to handle Home button click
   const handleHomeClick = () => {
     if (areAllPathsTrue()) {
-      navigate("/rules"); // Redirect to Rules.jsx if all paths are true
+      setShowCompletionPopup(true);
+      // navigate("/rules"); // Redirect to Rules.jsx if all paths are true
     } else {
       const pathData = localStorage.getItem("path");
       localStorage.clear();
