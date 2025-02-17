@@ -307,7 +307,7 @@ const Level5 = ({ setCompletedLevels }) => {
           <span className="text-slate-50 text-sm sm:text-base">Help</span>
         </div>
       </div>
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full my-6">
         <h2 className="text-2xl font-bold text-slate-50 mx-auto mr-50 mb-6">
           No sign of Envenomation
         </h2>
